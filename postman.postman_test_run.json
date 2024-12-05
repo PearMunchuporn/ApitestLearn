@@ -1,0 +1,136 @@
+{
+	"id": "34e6664b-5d16-4b76-95fc-375198c9fbcf",
+	"name": "postman",
+	"timestamp": "2024-12-04T09:58:46.269Z",
+	"collection_id": "0-7a4d9178-42db-44d1-816d-018f733d7aaa",
+	"folder_id": 0,
+	"environment_id": "d3d0ee16-926f-4f58-b5ed-02550ffacdb7",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "c44e7f28-a119-48e1-b8ee-cface85113e3",
+			"name": "get json",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 121,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				121
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6d5d6c00-1ed4-4a41-9084-4c442f36a22c",
+			"name": "post json",
+			"url": "https://jsonplaceholder.typicode.com//posts/1",
+			"time": 321,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				321
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4334536f-b2bd-4a26-8dce-cd8ca8204240",
+			"name": "put json",
+			"url": "https://jsonplaceholder.typicode.com//posts/1",
+			"time": 325,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				325
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "4ab1a0f8-5a76-4157-a2ce-a137b2decb8a",
+			"name": "delete json",
+			"url": "https://jsonplaceholder.typicode.com//posts/1",
+			"time": 312,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				312
+			],
+			"allTests": [
+				{
+					"Your test name": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1079,
+	"collection": {
+		"requests": [
+			{
+				"id": "c44e7f28-a119-48e1-b8ee-cface85113e3",
+				"method": "GET"
+			},
+			{
+				"id": "6d5d6c00-1ed4-4a41-9084-4c442f36a22c",
+				"method": "POST"
+			},
+			{
+				"id": "4334536f-b2bd-4a26-8dce-cd8ca8204240",
+				"method": "PUT"
+			},
+			{
+				"id": "4ab1a0f8-5a76-4157-a2ce-a137b2decb8a",
+				"method": "DELETE"
+			}
+		]
+	}
+}
